@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Compra</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./projeto2.html">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #btnpg1:hover {
+            background-color: darkgoldenrod;
+            color: azure;
+        }
+
+        a {
+            color: black !important;
+        }
+
+        #div3 {
+            background-color: darkgoldenrod;
+            grid-template-areas: q3;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div style="min-height: 100vh;">
+        <header id="inicio" style="min-height: 10vh;">
+            <nav class="navbar bg-body-tertiary"
+                style="height: 10vh; background-color: white !important; align-items: center; display: flex;">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./projeto2.html"
+                        style="display: flex; align-items: center; justify-content: center;">
+                        <img src="./img/logo.jpg" alt="Logo" width="160" height="100"
+                            class="d-inline-block align-text-top">
+
+                    </a>
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./projeto2.html">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./projeto2.html#pag2">Consoles e queridinhos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./projeto2.html#pag3">Cadastro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./projeto2.html#div3">Fale conosco</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <br>
+            <div style="background-color: goldenrod; height: 20px;"></div>
+            <br>
+
+            <!--PÁGINA 2-->
+
+            <section id="compra" style="min-height: 100vh; background-color: rgba(255, 237, 204); display: flex;">
+                <div class="container-fluid">
+                    <div class="row" style="min-height: 100vh;">
+
+                        <!--Coluna Esquerda-->
+                        <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center"
+                            style="background-color: white;">
+                            <img src="./img/xbox.jpg" style="height: 70%;">
+                        </div>
+                        <!--Coluna Direita-->
+                        <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center"
+                            style="background-color: white;">
+                            <div class="row">
+                                <div class="col d-flex flex-wrap gap-3 justify-content-center"
+                                    style="flex-direction: column; text-align: center;">
+                                    <h2>Xbox Series X</h2>
+                                    <h1>R$5999,99</h1>
+                                </div>
+                                <button type="button" class="btn btn-warning"> <b>COMPRAR </b></button>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+    </div>
+
+
+
+    </section>
+
+    <!--PÁGINA 3-->
+    <section id="pag3" style="min-height: 100vh; background-color: gold;"
+        class="d-flex justify-content-center align-items-center flex-column container-fluid">
+        <fieldset>
+            <h1>Cadastre para descontos INSANOS!</h1>
+
+            <form>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Endereço de Email:</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">Nós não vamos compartilhar o seu e-mail!</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Senha:</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Nome:</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1">
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Enviar</button>
+            </form>
+        </fieldset>
+    </section>
+
+
+    </section>
+
+    <!--PÁGINA 4-->
+    <section id="pag3" style="min-height: 100vh; background-color: goldenrod;"
+        class="d-flex justify-content-center align-items-center flex-column container-fluid">
+        <h1 style="text-align: center; color: white;">Nossa localização:</h1>
+
+        <div style="display: flex; flex-direction: column; align-items: center;">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3688.9874094677507!2d-47.55847972470477!3d-22.39183207962088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c7dbb03f87566b%3A0x260df245d398a095!2sBanana%20Games!5e0!3m2!1spt-BR!2sbr!4v1787686801801!5m2!1spt-BR!2sbr"
+                width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            <br>
+            <img style="width: 70%; height: 60%;" src="./img/frente.jpg" alt="">
+        </div>
+    </section>
+    </main>
+
+    <footer class="mt-auto d-flex flex-column align-items-center justify-content-center"
+        style="min-height: 10vh; background-color: darkgoldenrod">
+
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./projeto2.html">Início</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./projeto2.html#pag2">Consoles e Queridinhos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./projeto2.html#pag3">Cadastro</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./projeto2.html#div3">Fale conosco</a>
+            </li>
+        </ul>
+        <div id="div3">
+            <div>
+                <h4 style="color: white;">Fale conosco:</h4>
+            </div>
+            <a href="https://www.instagram.com/bananagamesrc/"><img
+                    src="https://cdn-icons-png.flaticon.com/512/5968/5968776.png"
+                    style="width: 20px; height: 20px;">@bananagamesrc </a>
+            <a href="https://www.whatsapp.com/catalog/5519983835392/?app_absent=0"><img
+                    src="https://img.icons8.com/color/48/whatsapp--v1.png" style="width: 20px; height: 20px;">55 19
+                98383-5392</a>
+        </div>
+    </footer>
+
+
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

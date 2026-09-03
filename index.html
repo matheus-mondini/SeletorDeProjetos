@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="images">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-image: linear-gradient(to left top, #2f1eeb, #006cff, #0098ff, #00bbf9, #45d9e7);
+        }
+
+        a {
+            color: azure !important;
+        }
+
+        a:hover {
+            color: #2f1eeb !important;
+        }
+
+        span {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 20px;
+            color: azure;
+        }
+        footer{
+            background-image: linear-gradient(to left top, #2f1eeb, #006cff, #0098ff, #00bbf9, #45d9e7);
+        }
+        main{
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class=" d-flex flex-column"
+        style="min-height: 100vh;background-image: linear-gradient(to left top, #2f1eeb, #006cff, #0098ff, #00bbf9, #45d9e7);;">
+
+        <header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"> <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/developer.png" alt="developer"/></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://github.com/matheus-mondini">Meu Perfil No Git Hub!</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="mt-5 d-flex flex-column align-items-center col flex-wrap gap-3 justify-content-center">
+                <h1 style="color: azure; font-family: Verdana, Geneva, Tahoma, sans-serif;"><b>Aplicações Desenvolvidas
+                        com: </b></h1>
+                <hr>
+                <p>
+                    <img width="96" height="96"
+                        src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/96/external-html-5-is-a-software-solution-stack-that-defines-the-properties-and-behaviors-of-web-page-logo-color-tal-revivo.png"
+                        alt="external-html-5-is-a-software-solution-stack-that-defines-the-properties-and-behaviors-of-web-page-logo-color-tal-revivo" />
+                    <span>HTML5</span>
+                    <img width="96" height="96" src="https://img.icons8.com/stickers/100/css3.png" alt="css3" />
+                    <span>CSS3</span>
+                    <img width="96" height="96" src="https://img.icons8.com/fluency/96/bootstrap.png" alt="bootstrap"/>
+                    <span>Bootstrap</span>
+                </p>
+
+
+                <div class="row">
+                    <div class="col d-flex flex-wrap gap-3 justify-content-center">
+                        <!--Primeiro Card-->
+                        <div class="card" style="width: 18rem;">
+                            <img src="./images/dog.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Cuidados com os Animais no verão</h5>
+                                <p class="card-text"></p>
+                                <a href="./Projetos/projeto1/projeto1.html" class="btn btn-primary">Ir para o Projeto</a>
+                            </div>
+                        </div>
+
+                        <!--Segundo Card-->
+                        <div class="card" style="width: 18rem;">
+                            <img src="./images/logo.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Banana Games</h5>
+                                <p class="card-text"></p>
+                                <a href="./Projetos/projeto2/projeto2.html" class="btn btn-primary">Acessar</a>
+                            </div>
+                        </div>
+
+                        <!--Terceiro Card-->
+                        <div class="card" style="width: 18rem;">
+                            <img src="./images/MedsyncSFundo.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">MedSync Farma</h5>
+                                <p class="card-text"></p>
+                                <a href="./Projetos/projeto3/prova.html" class="btn btn-primary">Acessar</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+    </div>
+    </div>
+    </section>
+    </main>
+
+    <footer class="mt-auto">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link" href="#">©Matheus-Mondini 2026 - TODOS OS DIREITOS RESERVADOS</a>
+            </li>
+        </ul>
+    </footer>
+
+    </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
