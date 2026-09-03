@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MedSync</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .card-img-top {
+            height: 15rem;
+            width: 13rem;
+        }
+
+        .card {
+            height: 35rem;
+        }
+    </style>
+</head>
+
+
+<body style="background-color: #006a8b;">
+
+    <!--TEM QUE TER:
+    Home, 
+    Catálogo de produtos,
+    Nossa História,
+    Contato.
+    -->
+    <!--Div HEADER-->
+    <div style="min-height: 100vh;">
+        <header id="inicio" style="min-height: 10vh;">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <!--Logo Farma-->
+                    <a class="navbar-brand ml-auto" href="./prova.html"><img src="./img/MedsyncSFundo.png"
+                            style="height: 80px;"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end mr-auto" id="navbarNavDropdown">
+                        <ul class="navbar-nav justify-content-end">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#pag2">Catálogo de Produtos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#pag3">Nossa História</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#pag4">Contato</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+
+            <!--PÁGINA 1-->
+            <section
+                style="min-height: 90vh; background-image: linear-gradient(to right top, #051937, #003f63, #006a8b, #0097ad, #2ec6c5); background-size: cover; background-position: center;
+            background-repeat: no-repeat; display: flex; flex-direction:column; align-items: center; justify-content: center;">
+                <img src="./img/MedsyncSFundo.png" alt="">
+                <h1 style="color: azure; opacity: 0.7; text-shadow: 10px 10px 14px; font-size: 100px;"> MedSync</h1>
+                <h4 style="color: #2ec6c5; opacity: 0.7;text-shadow: 10px 4px 6px; font-size: 30px;">Saúde em perfeita Sincronia!</h4>
+                <h4 style="color: #2ec6c5; opacity: 0.7;text-shadow: 10px 4px 6px; font-size: 20px;">Atendimento acolhedor, Farmácia de bairro,Entrega rápida</h4>
+            </section>
+
+            <!--PÁGINA 2 Catálogo-->
+            <section id="pag2" style="min-height: 100vh; background-color: #006a8b;"
+                class="d-flex justify-content-center align-items-center flex-column container-fluid">
+                <div style="display: flex; align-items: center; justify-content: center;" class="row">
+                    <h1 style="text-align: center; background-color: #003f63; color: aliceblue;">Remédios</h1>
+
+                    <!--Primeiro card-->
+                    <div class="card" style="width: 18rem;">
+                        <img src="./img/CloridratoDeFexofenadina.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Cloridrato De Fexofenadina R$: 27,99</h5>
+                            <p class="card-text">Alivia sintomas de rinite alérgica (espirros, coriza, coceira) e
+                                urticária sem causar sonolência significativa.</p>
+                            <a href="#pag2" class="btn btn-primary">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">
+                                    Adicionar ao Carrinho
+                                </button>
+
+                                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="staticBackdropLabel1"><img width="40"
+                                                        height="40" src="https://img.icons8.com/pulsar-line/48/buy.png"
+                                                        alt="buy" /> Adicionado ao carrinho!</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body" id="div1">
+                                                Obrigado!
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Fechar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--Segundo card-->
+                    <div class="card" style="width: 18rem;">
+                        <img src="./img/Dipirona.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Dipirona R$: 5,98</h5>
+                            <p class="card-text">Indicada para o alívio de dores de intensidade leve a moderada e
+                                controle da febre.</p>
+                            <a href="#pag2" class="btn btn-primary">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">
+                                    Adicionar ao Carrinho
+                                </button>
+
+                                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="staticBackdropLabel"><img width="40"
+                                                        height="40" src="https://img.icons8.com/pulsar-line/48/buy.png"
+                                                        alt="buy" /> Adicionado ao carrinho!</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body" id="div2">
+                                               ... 
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Fechar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--Terceiro card-->
+                    <div class="card" style="width: 18rem;">
+                        <img src="./img/Ibuprofeno.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Ibuprofeno R$: 10,48</h5>
+                            <p class="card-text">Indicado para dores musculares, inflamações, dor de dente, febre e
+                                enxaqueca.</p>
+                            <a href="#pag2" class="btn btn-primary">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">
+                                    Adicionar ao Carrinho
+                                </button>
+
+                                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="staticBackdropLabel"><img width="40"
+                                                        height="40" src="https://img.icons8.com/pulsar-line/48/buy.png"
+                                                        alt="buy" /> Adicionado ao carrinho!</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body" id="div3">
+                                                ...
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Fechar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--Quarto card-->
+                    <div class="card" style="width: 18rem;">
+                        <img src="./img/Loratadina.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Loratadina R$: 11,27</h5>
+                            <p class="card-text">Trata sintomas alérgicos na pele, olhos e trato respiratório.</p>
+                            <a href="#pag2" class="btn btn-primary">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">
+                                    Adicionar ao Carrinho
+                                </button>
+
+                                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="staticBackdropLabel"><img width="40"
+                                                        height="40" src="https://img.icons8.com/pulsar-line/48/buy.png"
+                                                        alt="buy" /> Adicionado ao carrinho!</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body" id="div4">
+                                                Remédio sem restrições
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Fechar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--Quinto card-->
+                    <div class="card" style="width: 18rem;">
+                        <img src="./img/Paracetamol.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Paracetamol R$: 8,99</h5>
+                            <p class="card-text">Alivia dores leves a moderadas e reduz a febre.</p>
+                            <a href="#pag2" class="btn btn-primary">
+
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">
+                                    Adicionar ao Carrinho
+                                </button>
+
+                                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="staticBackdropLabel"><img width="40"
+                                                        height="40" src="https://img.icons8.com/pulsar-line/48/buy.png"
+                                                        alt="buy" /> Adicionado ao carrinho!</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Remédio sem restrições
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--Sexto card-->
+                    <div class="card" style="width: 18rem;">
+                        <img src="./img/Guaifenesina.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Guaifenesina R$: 22,68</h5>
+                            <p class="card-text">Ajuda a fluidificar o catarro e a aliviar a tosse cheia (produtiva).
+                            </p>
+                            <a href="#pag2" class="btn btn-primary">
+
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">
+                                    Adicionar ao Carrinho
+                                </button>
+
+                                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="staticBackdropLabel"><img width="40"
+                                                        height="40" src="https://img.icons8.com/pulsar-line/48/buy.png"
+                                                        alt="buy" /> Adicionado ao carrinho!</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Remédio sem restrições
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--Sétimo card-->
+                    <div class="card" style="width: 18rem;">
+                        <img src="./img/Dramin.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Dramin R$: 12,00</h5>
+                            <p class="card-text">Previne e trata enjoos, tonturas e vômitos (muito usado em viagens ou
+                                noites de mal-estar).</p>
+                            <a href="#pag2" class="btn btn-primary">
+
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">
+                                    Adicionar ao Carrinho
+                                </button>
+
+                                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="staticBackdropLabel"><img width="40"
+                                                        height="40" src="https://img.icons8.com/pulsar-line/48/buy.png"
+                                                        alt="buy" /> Adicionado ao carrinho!</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Remédio sem restrições
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--Oitavo card-->
+                    <div class="card" style="width: 18rem;">
+                        <img src="./img/Buscopan.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Buscopan R$: 11,00</h5>
+                            <p class="card-text">Alivia dores de estômago e cólicas abdominais, intestinais e
+                                menstruais.</p>
+                            <a href="#pag2" class="btn btn-primary">
+
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">
+                                    Adicionar ao Carrinho
+                                </button>
+
+                                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                    data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="staticBackdropLabel"><img width="40"
+                                                        height="40" src="https://img.icons8.com/pulsar-line/48/buy.png"
+                                                        alt="buy" /> Adicionado ao carrinho!</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <h1 style="text-align: center; background-color: #003f63; color: aliceblue; margin-top: 10px;">ATENÇÃO:Remédios
+                        Controlados <b> só são vendidos na loja Física! </b></h1>
+            </section>
+            <!--PÁGINA 3 História-->
+            <section id="pag3" style="min-height: 100vh; background-color: #006a8b;"
+                class="d-flex justify-content-center align-items-center flex-column container-fluid">
+                <div style="display: flex;" class="row">
+                    <h1 style="text-align: center; background-color: #003f63; color: aliceblue;">Nossa História</h1>
+                    <div style="width: 50%;">
+                        <div id="carouselExample" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./img/Daniel&Jorge.png" style="height: 690px" class="d-block w-100"
+                                        alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./img/Farma.png" style="height: 40% !important;" class="d-block w-100"
+                                        alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div
+                        style="width: 50%; text-align: center; background-color: #006a8b; color: aliceblue; align-items: center; justify-content: center; display: flex;">
+                        A MedSync Farmácia e Manipulação, fundada em Rio Claro/SP por Daniel Cerri,
+                        Eduardo Jorge e Grilo, nasceu da união entre o conhecimento acadêmico na área da saúde e
+                        o desejo de transformar o atendimento farmacêutico em um espaço de acolhimento e educação. O
+                        propósito do trio ganhou uma dimensão ainda mais profunda diante do diagnóstico e do tratamento
+                        de câncer enfrentado
+                        por Grilo, uma jornada de superação que trouxe empatia real e olhar humano para as necessidades
+                        diárias de pacientes em tratamento intensivo.
+                        <br>
+                        A partir dessa vivência, a farmácia consolidou sua missão de oferecer soluções personalizadas e
+                        de alta precisão técnica, tornando-se uma referência
+                        em cuidado humanizado. Com forte impacto e responsabilidade social em Rio Claro, a MedSync
+                        desenvolve programas de conscientização em saúde e
+                        presta suporte especializado a pacientes e famílias que enfrentam tratamentos complexos,
+                        provando que a ciência e a compaixão devem caminhar sempre juntas.
+                    </div>
+                </div>
+
+
+
+            </section>
+
+
+            <!--PÁGINA 4 fale conosco e info-->
+
+            <section id="pag4" style="min-height: 100vh; background-color: #006a8b; display: flex;">
+                <div class="container-fluid">
+                    <div class="row" style="min-height: 100vh;">
+
+                        <!--Coluna Esquerda-->
+                        <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center"
+                            style="background-color: #006a8b">
+                            <section id="pag3" style="min-height: 100vh; background-color: #006a8b;"
+                                class="d-flex justify-content-center align-items-center flex-column container-fluid">
+
+                                <form
+                                    style="width: 50%; background-color: #0097ad;  border-radius: 10px; border: #051937 1px solid;">
+                                    <h2 style="color: aliceblue;">Fale Conosco:</h2>
+                                    <div class="mb-3" style="color: aliceblue;">
+                                        <label for="exampleInputEmail1" class="form-label">Endereço de Email:</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp">
+                                        <div id="emailHelp" style="color: aliceblue;" class="form-text">Nós não vamos
+                                            compartilhar o seu e-mail!
+                                        </div>
+                                    </div>
+                                    <div class="mb-3" style="color: aliceblue;">
+                                        <label for="exampleInputPassword1" class="form-label">Nome:</label>
+                                        <input type="text" class="form-control" id="exampleInputPassword1">
+                                    </div>
+                                    <div class="mb-3" style="color: aliceblue;">
+                                        <label for="exampleInputPassword1" class="form-label">Mensagem:</label>
+                                        <input type="text" class="form-control" id="exampleInputPassword1">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Enviar</button>
+                                </form>
+
+                            </section>
+
+                        </div>
+                        <!--Coluna Direita-->
+                        <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center" style="background-color: 
+                            #006a8b;">
+                            <section id="pag4" style="min-height: 100vh; background-color: #006a8b;"
+                                class="d-flex justify-content-center align-items-center flex-column container-fluid">
+                                <form
+                                    style="width: 50%;  background-color: #0097ad; height: 31%; border-radius: 10px; border: #051937 1px solid; align-items: center; justify-content: center; text-align: center; display: flex; flex-wrap: wrap;">
+                                    <h2 style="color: aliceblue;">Informações da Farmácia:</h2>
+                                    <div class="mb-3" style="color: aliceblue;">
+                                        <span> <img width="20" height="20"
+                                                src="https://img.icons8.com/ios/50/marker--v1.png"
+                                                alt="marker--v1" /><b>Endereço:</b> Rio Claro/SP</span>
+                                        <br>
+                                        <span> <img width="20" height="20"
+                                                src="https://img.icons8.com/ios/50/phone--v1.png"
+                                                alt="phone--v1" /><b>Telefone:</b> (19)3500-0000</span>
+                                        <br>
+                                        <span> <img width="20" height="20"
+                                                src="https://img.icons8.com/fluency-systems-regular/48/new-post.png"
+                                                alt="new-post" /><b>E-Mail:</b> contato@medsync.com.br</span>
+                                        <br>
+                                        <span> <img width="20" height="20"
+                                                src="https://img.icons8.com/ios/50/clock--v1.png"
+                                                alt="clock--v1" /><b>Horário:</b> Segunda a Sábado: 08h às 20h</span>
+
+
+                                </form>
+                            </section>
+
+                        </div>
+                    </div>
+            </section>
+
+        </main>
+
+        <footer class="mt-auto" style="background-color: #003f63;">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: #0097ad;">© 2026 MedSync - Saúde em perfeita Sincronia
+                        TODOS OS DIREITOS RESERVADOS</a>
+                </li>
+            </ul>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
